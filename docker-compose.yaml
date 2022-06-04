@@ -1,4 +1,4 @@
-version: "3"
+version: "2.1"
 services:
   vscode-server:
     image: lscr.io/linuxserver/code-server:latest
