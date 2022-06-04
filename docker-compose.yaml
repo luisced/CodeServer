@@ -2,16 +2,16 @@ version: "2.1"
 services:
   vscode-server:
     image: lscr.io/linuxserver/code-server:latest
-    container_name: code-server
+    container_name: luis-code-server
     environment:
       - PUID=1000
       - PGID=1000
       - TZ=America/Mexico_City
-      - PASSWORD= Lu5571967146#
-      - SUDO_PASSWORD= Lu557196714657529564#
-      - PROXY_DOMAIN= luiscedillo.com
+      - PASSWORD=Lu5571967146#
+      - SUDO_PASSWORD=Lu557196714657529564#
+      - PROXY_DOMAIN=luiscedillo.com
     volumes:
       - /home/luisced/Vs_CodeServer/CodeServer:/config
     ports:
       - 8443:8443
-    restart: always
+    restart: unless-stopped
