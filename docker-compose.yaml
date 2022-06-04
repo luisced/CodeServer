@@ -11,7 +11,7 @@ services:
       - SUDO_PASSWORD=Lu557196714657529564#
       - PROXY_DOMAIN=luiscodeserver.dev
     volumes:
-      - /home/luisced/Vs_CodeServer/CodeServer:/config
+      - /home/luisced/Vs-CodeServer/CodeServer:/config
     ports:
       - 8443:8443
     restart: unless-stopped
