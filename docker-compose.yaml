@@ -8,7 +8,7 @@ services:
       - PGID=1000
       - TZ=America/Mexico_City
       - PROXY_DOMAIN=luiscodeserver.dev
-      - HASHED_PASSWORD="$argon2i$v=19$m=4096,t=3,p=1$b1JwnnPZEkRZu7dxv0aIfA$8FDJHwVihLQqEMh6fUW262Pn4G+MHfaz+fS1mnb9JCA"
+      - HASHED_PASSWORD="$argon2i$v=19$m=4096,t=3,p=1$6MokWbNPuigqwEeJa5Z5vA$1YVuz5Y0J1tsEfbCJR2VES635eezF5JlHi+m69rJe48"
       - SUDO_PASSWROD_HASH="$argon2i$v=19$m=4096,t=3,p=1$bGjPbg9kSUTfINv8MNTmUg$E/Jl5mzqKj4kZDXYqGNWwGl/5jjwI+ohAiksBju11N8"
     volumes:
       - /home/luisced/Vs-CodeServer/CodeServer:/config
