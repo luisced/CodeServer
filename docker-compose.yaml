@@ -9,7 +9,7 @@ services:
       - TZ=America/Mexico_City
       - PASSWORD=Lu5571967146#
       - SUDO_PASSWORD=Lu557196714657529564#
-      - PROXY_DOMAIN=luiscedillo.com
+      - PROXY_DOMAIN=luiscodeserver.dev
     volumes:
       - /home/luisced/Vs_CodeServer/CodeServer:/config
     ports:
