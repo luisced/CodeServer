@@ -7,9 +7,10 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=America/Mexico_City
-      - HASHED_PASSWORD="$argon2i$v=19$m=4096,t=3,p=1$6MokWbNPuigqwEeJa5Z5vA$1YVuz5Y0J1tsEfbCJR2VES635eezF5JlHi+m69rJe48"
-      - SUDO_PASSWORD_HASH="$argon2i$v=19$m=4096,t=3,p=1$bGjPbg9kSUTfINv8MNTmUg$E/Jl5mzqKj4kZDXYqGNWwGl/5jjwI+ohAiksBju11N8"
       - PROXY_DOMAIN=luiscodeserver.dev
+    auth: password
+    hashed-password: "$argon2i$v=19$m=4096,t=3,p=1$6MokWbNPuigqwEeJa5Z5vA$1YVuz5Y0J1tsEfbCJR2VES635eezF5JlHi+m69rJe48"
+    sudo-password-hash: "$argon2i$v=19$m=4096,t=3,p=1$bGjPbg9kSUTfINv8MNTmUg$E/Jl5mzqKj4kZDXYqGNWwGl/5jjwI+ohAiksBju11N8"
     volumes:
       - /home/luisced/Vs-CodeServer/CodeServer:/config
     ports:
