@@ -10,7 +10,7 @@ services:
       - PASSWORD=Lu5571967146#
       - SUDO_PASSWORD=Lu557196714657529564#
       - PROXY_DOMAIN=luiscodeserver.dev
-    network:
+    networks:
       - codeserver
     volumes:
       - /home/luisced/Vs-CodeServer/CodeServer:/config
