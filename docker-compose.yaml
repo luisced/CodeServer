@@ -1,5 +1,11 @@
 version: "3"
+
+networks:
+  - codeserver:
+      external: true
+
 services:
+  
   vscode-server:
     image: lscr.io/linuxserver/code-server:latest
     container_name: luis-code-server
