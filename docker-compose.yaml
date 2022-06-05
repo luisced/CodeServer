@@ -1,11 +1,5 @@
 version: "3"
-
-networks:
-  codeserver:
-    external: true
-
 services:
-  
   vscode-server:
     image: lscr.io/linuxserver/code-server:latest
     container_name: luis-code-server
@@ -15,9 +9,6 @@ services:
       - TZ=America/Mexico_City
       - PASSWORD=Lu5571967146#
       - SUDO_PASSWORD=Lu557196714657529564#
-      - PROXY_DOMAIN=luiscodeserver.dev
-    networks:
-      - codeserver
     volumes:
       - /home/luisced/Vs-CodeServer/CodeServer:/config
     ports:
