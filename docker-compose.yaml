@@ -10,18 +10,11 @@ services:
       - PASSWORD=Lu5571967146#
       - SUDO_PASSWORD=Lu557196714657529564#
       - PROXY_DOMAIN=luiscodeserver.dev
+    network:
+      - codeserver
     volumes:
       - /home/luisced/Vs-CodeServer/CodeServer:/config
     ports:
       - 8443:8443
     restart: unless-stopped
-  traefik:
-    image: "traefik:v2.5"
-    container_name: traefik
-    command: --api.insecure=true --providers.docker
-    ports:
-      - 80:80
-      - "433:433"
-    volumes:
-      - /etc/traefik:/etc/traefik
-      - /var/run/docker.sock:/var/run/docker.sock:ro
+
