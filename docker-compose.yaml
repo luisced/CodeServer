@@ -12,6 +12,7 @@ services:
     volumes:
       - /home/luisced/Vs-CodeServer/CodeServer:/config
     ports:
+    #  - "8080:8080"
       - 8443:8443
     restart: unless-stopped
 
